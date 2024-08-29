@@ -1,0 +1,16 @@
+AppDoze.com
+=============
+How to Install the Application:
+=============
+1. Uninstall MicroG (System Settings> Apps > microG)
+2. Uninstall YouTube ReVanced
+3. Disable original YouTube (System Settings > Apps > YouTube)
+4. Restart phone
+5. Install the new GMS-Core (MicroG) made by the ReVanced team (https://github.com/ReVanced/GmsCore/releases/latest)
+6. Login on the new MicroG
+7. Install preferred YouTube ReVanced release
+8. Open YouTube ReVanced
+9. Accept the restart prompt to apply layout
+10. Clear YouTube ReVanced from recents
+11. Force kill YouTube Revanced (System Settings > Apps > YouTube ReVanced)
+12. Launch YouTube ReVanced and enjoy

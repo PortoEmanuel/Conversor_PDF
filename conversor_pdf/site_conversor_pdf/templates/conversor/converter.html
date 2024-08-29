@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor PDF</title>
+    <link rel="shortcut icon" href="static/image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <h1 class="uper">Conversor de arquivos em PDF</h1>
+        <h3>Tipos de arquivos aceitos</h3>
+        <p>.docx (Documentos Word do Microsoft Office) <br>
+            .odt (Documentos do OpenDocument Text) <br>
+            .xlsx (Planilhas do Microsoft Excel)</p>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="arquivo" id="arquivo">
+        <button type="submit">Converter</button>
+    </form>
+    <div id="resultado">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Arquivo</title>
+    <link rel="shortcut icon" href="/static/image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+<body>
+    <div class="conteudo">
+        <h1 class="uper" >Obrigado por utilizar nossos serviços!</h1>
+        {% if arquivo.pdf %}
+            <p> Clique em Baixar PDF para carregar seu arquivo. </p>
+        {% else %}
+            <!-- Mensagem se nenhum PDF foi gerado -->
+            <p>Nenhum PDF gerado para este arquivo.</p>
+        {% endif %}
+        <!-- Formulário para possíveis ações adicionais -->
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="download">Baixar PDF</button>
+        </form>
+        <div><a href="{% url 'converter' %}">Converter outro arquivo</a></div>
+    </div>
+
+</body>
+</html>
